@@ -10,28 +10,30 @@
     font-family: Georgia, 'Times New Roman', serif;
     background: #fbfaf6;
     color: #111;
-    padding: 10px 26px 8px;
+    padding: 8px 24px 5px;
     display: flex;
     flex-direction: column;
   }
-  header { text-align: center; border-bottom: 5px double #111; padding-bottom: 6px; }
-  .name { font-size: 44px; font-weight: 900; letter-spacing: 4px; line-height: 1.02; }
-  .date { font-size: 24px; font-weight: 700; margin-top: 2px; }
+  header { text-align: center; border-bottom: 5px double #111; padding-bottom: 5px; }
+  .name { font-size: 36px; font-weight: 900; letter-spacing: 4px; line-height: 1.02; }
+  .date { font-size: 20px; font-weight: 700; margin-top: 2px; }
   .date span { color: #b91c1c; }
-  .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; letter-spacing: 1px; color: #444; margin-top: 2px; }
-  .lead { display: flex; gap: 18px; padding: 10px 0 9px; border-bottom: 1px solid #111; }
+  .sub { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 1px; color: #444; margin-top: 2px; }
+  .lead { display: flex; gap: 16px; padding: 7px 0 6px; border-bottom: 1px solid #111; }
   .lead-text { flex: 1; }
-  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 2.5px; color: #b91c1c; text-transform: uppercase; }
-  .lead h1 { font-size: 31px; line-height: 1.05; font-weight: 900; margin: 3px 0 4px; }
-  .lead p { font-size: 17px; line-height: 1.28; color: #222; }
-  .lead-art { width: 210px; height: 122px; flex: none; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 2.5px; color: #b91c1c; text-transform: uppercase; }
+  .lead h1 { font-size: 27px; line-height: 1.05; font-weight: 900; margin: 3px 0 4px; }
+  .lead p { font-size: 14px; line-height: 1.28; color: #222; }
+  .lead-art { width: 132px; height: 82px; flex: none; }
   .lead-art svg { width: 100%; height: 100%; display: block; }
-  .grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 16px; padding: 8px 0 0; align-content: space-between; }
-  .cell { border-top: 2px solid #111; padding-top: 4px; overflow: hidden; }
-  .cell .ic { float: left; width: 34px; height: 34px; margin: 1px 7px 2px 0; }
-  .cell .kick { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #b91c1c; text-transform: uppercase; }
-  .cell h3 { font-size: 17px; line-height: 1.12; font-weight: 900; margin: 1px 0 2px; }
-  .cell p { font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 1.28; color: #222; }
+  .grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 12px; padding: 5px 0 0; align-content: space-between; }
+  .cell { border-top: 2px solid #111; padding-top: 2px; overflow: hidden; }
+  .cell .ic { float: left; width: 32px; height: 32px; margin: 1px 6px 2px 0; }
+  .cell .kick { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; color: #b91c1c; text-transform: uppercase; }
+  .claim { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 800; letter-spacing: 1px; color: #b91c1c; border: 1px solid #b91c1c; padding: 0 3px; margin-left: 4px; vertical-align: 1px; text-transform: uppercase; }
+  .cell h3 { font-size: 15.5px; line-height: 1.1; font-weight: 900; margin: 1px 0 1px; }
+  .cell p { font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; line-height: 1.2; color: #222; }
+  .legend { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #444; text-align: center; border-top: 1px solid #999; padding-top: 2px; margin-top: 3px; }
 </style>
 </head>
 <body>
@@ -39,7 +41,7 @@
 <header>
   <div class="name">THE WORLD IN ONE DAY</div>
   <div class="date"><span>Tuesday, 24 November 2026</span></div>
-  <div class="sub">30 stories &middot; first reported Tuesday 24 November 2026 &middot; all regions</div>
+  <div class="sub">38 stories &middot; 10 regions &middot; first reported Tuesday 24 November 2026 &middot; claims labelled</div>
 </header>
 
 <section class="lead">
@@ -125,7 +127,7 @@
     <p>Kyiv says it hit ships in the Gulf of Finland and a warship off Libya.</p>
   </article>
   <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9effa"/><path d="M17 4 L27 8 V16 C27 23 22 27 17 29 C12 27 7 23 7 16 V8 Z" fill="#2563eb"/><polygon points="17,11 18.6,15 23,15 19.6,17.6 20.8,21.6 17,19.4 13.2,21.6 14.4,17.6 11,15 15.4,15" fill="#fff"/></svg>
-    <div class="kick">WAR · EUROPE</div>
+    <div class="kick">WAR · EUROPE <span class="claim">CLAIM</span></div>
     <h3>Russia warns Estonia of war</h3>
     <p>Medvedev warns of a preventive nuclear attack; NATO vows to defend space.</p>
   </article>
@@ -150,7 +152,7 @@
     <p>Naeem Abu Nahel and six others die; Oxfam calls Gaza a 'toxic wasteland'.</p>
   </article>
   <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8eef7"/><path d="M6 19 L28 19 L25 25 L9 25 Z" fill="#37474f"/><rect x="9" y="13" width="6" height="6" fill="#546e7a"/><path d="M4 28 q3 -2 6 0 t6 0 t6 0 t6 0" fill="none" stroke="#3f7fb8" stroke-width="2"/><circle cx="27" cy="8" r="2.4" fill="#b91c1c"/></svg>
-    <div class="kick">TENSIONS · HORMUZ</div>
+    <div class="kick">TENSIONS · HORMUZ <span class="claim">CLAIM</span></div>
     <h3>Tankers hit by mines in Hormuz</h3>
     <p>Iran's Revolutionary Guard says it attacked a container ship in the strait.</p>
   </article>
@@ -160,7 +162,7 @@
     <p>No talks until the US meets seven conditions, Tehran says.</p>
   </article>
   <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdf3e0"/><path d="M17 5 L30 27 L4 27 Z" fill="#e8a13a"/><rect x="16" y="13" width="2.4" height="8" fill="#fff"/><circle cx="17.2" cy="24" r="1.6" fill="#fff"/></svg>
-    <div class="kick">WAR · YEMEN</div>
+    <div class="kick">WAR · YEMEN <span class="claim">CLAIM</span></div>
     <h3>Houthis advance on Aden</h3>
     <p>Fighters about 60 km from Aden; drone attack on a Riyadh tower wounds 11.</p>
   </article>
@@ -214,7 +216,49 @@
     <h3>47,000 women killed in 2025</h3>
     <p>UN says 47,000 women were killed by partners or relatives worldwide in 2025.</p>
   </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><circle cx="17" cy="17" r="11" fill="#7fb3d5"/><path d="M6 17 h22 M17 6 v22" stroke="#fff" stroke-width="1.5" fill="none"/><ellipse cx="17" cy="17" rx="5" ry="11" fill="none" stroke="#fff" stroke-width="1.5"/></svg>
+    <div class="kick">AFRICA · KENYA</div>
+    <h3>Kenya and Congo restore ties</h3>
+    <p>Ambassadors to return after talks in Oyo end a near-three-year strain.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><rect x="10" y="5" width="14" height="24" rx="1.5" fill="#fff" stroke="#2e7d6b" stroke-width="2"/><line x1="13" y1="12" x2="21" y2="12" stroke="#2e7d6b" stroke-width="2"/><line x1="13" y1="17" x2="21" y2="17" stroke="#2e7d6b" stroke-width="2"/><line x1="13" y1="22" x2="18" y2="22" stroke="#2e7d6b" stroke-width="2"/></svg>
+    <div class="kick">OCEANIA · AUSTRALIA</div>
+    <h3>Australia tables AI report</h3>
+    <p>Parliamentary committee sets out 46 AI rules on safety and copyright.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f5efe6"/><path d="M17 5 C17 5 8 16 8 21 a9 9 0 0 0 18 0 C26 16 17 5 17 5 Z" fill="#37474f"/></svg>
+    <div class="kick">MIDDLE EAST · IRAQ</div>
+    <h3>Iraq takes Kurdish oilfields</h3>
+    <p>PM orders ministry to run fields under Kurdish control; tensions rise.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9effa"/><circle cx="17" cy="17" r="11" fill="#1f3a93"/><g fill="#f5c518"><circle cx="17" cy="9" r="1.3"/><circle cx="24" cy="13" r="1.3"/><circle cx="24" cy="21" r="1.3"/><circle cx="17" cy="25" r="1.3"/><circle cx="10" cy="21" r="1.3"/><circle cx="10" cy="13" r="1.3"/></g></svg>
+    <div class="kick">EUROPE · EU</div>
+    <h3>EU to ban Russian symbols</h3>
+    <p>New sanctions plan bars Russian symbols at sports events.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdf3e0"/><path d="M17 4 C20 10 26 12 26 19 a9 9 0 0 1 -18 0 C8 13 12 11 13 7 C15 9 16 9 17 4 Z" fill="#e8590c"/><path d="M17 15 C19 18 21 19 21 22 a4 4 0 0 1 -8 0 C13 19 15 18 17 15 Z" fill="#f5c518"/></svg>
+    <div class="kick">ASIA · INDONESIA</div>
+    <h3>26 die in Indonesia fire</h3>
+    <p>Candy factory blaze in Banten; dozens still missing.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f4f1ea"/><path d="M17 9 C13 6 8 6 6 7 V27 C8 26 13 26 17 29 C21 26 26 26 28 27 V7 C26 6 21 6 17 9 Z" fill="#8a6d3b"/><line x1="17" y1="9" x2="17" y2="29" stroke="#f4f1ea" stroke-width="1.6"/></svg>
+    <div class="kick">EUROPE · FRANCE</div>
+    <h3>Pelicot to sue book publisher</h3>
+    <p>Publisher apologises, halts promotion.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8eef7"/><path d="M4 20 L30 12 L28 17 L12 22 L9 27 L7 26 L10 21 Z" fill="#37474f"/></svg>
+    <div class="kick">AFRICA · CONGO <span class="claim">CLAIM</span></div>
+    <h3>Congo plane missing in the east</h3>
+    <p>Rebels claim a shoot-down; plane missing.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdf3e0"/><line x1="17" y1="30" x2="17" y2="12" stroke="#8a6d3b" stroke-width="2"/><g fill="#e8a13a"><ellipse cx="17" cy="8" rx="3" ry="5"/><ellipse cx="12" cy="13" rx="2.4" ry="4" transform="rotate(-30 12 13)"/><ellipse cx="22" cy="13" rx="2.4" ry="4" transform="rotate(30 22 13)"/><ellipse cx="12" cy="20" rx="2.4" ry="4" transform="rotate(-30 12 20)"/><ellipse cx="22" cy="20" rx="2.4" ry="4" transform="rotate(30 22 20)"/></g></svg>
+    <div class="kick">WORLD · UN</div>
+    <h3>10m tons of wheat at risk</h3>
+    <p>Wheat may miss markets; Africa hit first.</p>
+  </article>
 </section>
+
+<footer class="legend">CLAIM = a party's claim, not confirmed fact. All stories first reported Tuesday 24 November 2026.</footer>
 
 </body>
 </html>
