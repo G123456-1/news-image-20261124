@@ -10,40 +10,28 @@
     font-family: Georgia, 'Times New Roman', serif;
     background: #fbfaf6;
     color: #111;
-    padding: 16px 30px 12px;
+    padding: 10px 26px 8px;
     display: flex;
     flex-direction: column;
   }
-  /* ---------- Masthead ---------- */
-  header { text-align: center; border-bottom: 5px double #111; padding-bottom: 8px; }
-  .name { font-size: 56px; font-weight: 900; letter-spacing: 4px; line-height: 1.02; }
-  .date { font-size: 29px; font-weight: 700; letter-spacing: 1px; margin-top: 4px; }
+  header { text-align: center; border-bottom: 5px double #111; padding-bottom: 6px; }
+  .name { font-size: 44px; font-weight: 900; letter-spacing: 4px; line-height: 1.02; }
+  .date { font-size: 24px; font-weight: 700; margin-top: 2px; }
   .date span { color: #b91c1c; }
-  /* ---------- Lead story ---------- */
-  .lead { display: flex; gap: 22px; padding: 12px 0 10px; border-bottom: 1px solid #111; }
+  .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; letter-spacing: 1px; color: #444; margin-top: 2px; }
+  .lead { display: flex; gap: 18px; padding: 10px 0 9px; border-bottom: 1px solid #111; }
   .lead-text { flex: 1; }
-  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 800; letter-spacing: 3px; color: #b91c1c; text-transform: uppercase; }
-  .lead h1 { font-size: 43px; line-height: 1.06; font-weight: 900; margin: 5px 0 7px; }
-  .lead p { font-size: 22px; line-height: 1.3; color: #222; }
-  .lead-art { width: 290px; height: 182px; flex: none; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 2.5px; color: #b91c1c; text-transform: uppercase; }
+  .lead h1 { font-size: 31px; line-height: 1.05; font-weight: 900; margin: 3px 0 4px; }
+  .lead p { font-size: 17px; line-height: 1.28; color: #222; }
+  .lead-art { width: 210px; height: 122px; flex: none; }
   .lead-art svg { width: 100%; height: 100%; display: block; }
-  /* ---------- Story grid ---------- */
-  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; padding: 11px 0 10px; border-bottom: 5px double #111; }
-  .card { border-top: 3px solid #111; padding-top: 7px; }
-  .card.w2 { grid-column: span 2; }
-  .card.w3 { grid-column: span 3; }
-  .card .art { width: 100%; height: 96px; margin-bottom: 6px; }
-  .card .art svg { width: 100%; height: 100%; display: block; }
-  .card .kicker { font-size: 15px; letter-spacing: 2px; }
-  .card h2 { font-size: 25px; line-height: 1.1; font-weight: 900; margin: 3px 0 4px; }
-  .card p { font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.28; color: #222; }
-  /* ---------- Bottom strip ---------- */
-  .strip { padding-top: 8px; }
-  .strip .label { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 800; letter-spacing: 3px; color: #b91c1c; text-transform: uppercase; margin-bottom: 4px; }
-  .strip ul { list-style: none; }
-  .strip li { font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.28; padding-left: 16px; position: relative; }
-  .strip li::before { content: "▪"; position: absolute; left: 0; color: #b91c1c; }
-  .strip li b { font-weight: 800; }
+  .grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 16px; padding: 8px 0 0; align-content: space-between; }
+  .cell { border-top: 2px solid #111; padding-top: 4px; overflow: hidden; }
+  .cell .ic { float: left; width: 34px; height: 34px; margin: 1px 7px 2px 0; }
+  .cell .kick { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #b91c1c; text-transform: uppercase; }
+  .cell h3 { font-size: 17px; line-height: 1.12; font-weight: 900; margin: 1px 0 2px; }
+  .cell p { font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 1.28; color: #222; }
 </style>
 </head>
 <body>
@@ -51,6 +39,7 @@
 <header>
   <div class="name">THE WORLD IN ONE DAY</div>
   <div class="date"><span>Tuesday, 24 November 2026</span></div>
+  <div class="sub">30 stories &middot; first reported Tuesday 24 November 2026 &middot; all regions</div>
 </header>
 
 <section class="lead">
@@ -80,107 +69,151 @@
 </section>
 
 <section class="grid">
-  <article class="card w2">
-    <div class="art">
-      <svg viewBox="0 0 300 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scales of justice">
-        <rect width="300" height="108" fill="#f4f1ea"/>
-        <g stroke="#3f3a33" stroke-width="4" fill="none" stroke-linecap="round">
-          <line x1="150" y1="14" x2="150" y2="92"/>
-          <line x1="96" y1="26" x2="204" y2="26"/>
-          <line x1="96" y1="26" x2="76" y2="62"/><line x1="96" y1="26" x2="116" y2="62"/>
-          <line x1="204" y1="26" x2="184" y2="62"/><line x1="204" y1="26" x2="224" y2="62"/>
-          <line x1="128" y1="92" x2="172" y2="92"/>
-        </g>
-        <path d="M62 62 A22 14 0 0 0 130 62 Z" fill="#8a6d3b"/>
-        <path d="M170 62 A22 14 0 0 0 238 62 Z" fill="#8a6d3b"/>
-        <circle cx="150" cy="14" r="6" fill="#3f3a33"/>
-      </svg>
-    </div>
-    <div class="kicker">Justice &middot; The Hague</div>
-    <h2>Court rules Myanmar committed genocide</h2>
-    <p>The Hague finds Myanmar guilty over the Rohingya; 14 countries back the ruling.</p>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9f5e9"/><rect x="9" y="9" width="16" height="16" rx="2" fill="#1a7f37"/><rect x="14" y="14" width="6" height="6" fill="#76b900"/><g stroke="#14532d" stroke-width="2"><line x1="13" y1="9" x2="13" y2="5"/><line x1="17" y1="9" x2="17" y2="5"/><line x1="21" y1="9" x2="21" y2="5"/><line x1="13" y1="25" x2="13" y2="29"/><line x1="17" y1="25" x2="17" y2="29"/><line x1="21" y1="25" x2="21" y2="29"/><line x1="9" y1="13" x2="5" y2="13"/><line x1="9" y1="17" x2="5" y2="17"/><line x1="9" y1="21" x2="5" y2="21"/><line x1="25" y1="13" x2="29" y2="13"/><line x1="25" y1="17" x2="29" y2="17"/><line x1="25" y1="21" x2="29" y2="21"/></g></svg>
+    <div class="kick">TECH · CHINA</div>
+    <h3>Huawei guilty of trade theft</h3>
+    <p>US jury convicts on trade secrets and bank fraud; acquits on racketeering.</p>
   </article>
-
-  <article class="card w2">
-    <div class="art">
-      <svg viewBox="0 0 300 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Globe with a leaf">
-        <rect width="300" height="108" fill="#e8f3f3"/>
-        <circle cx="118" cy="54" r="38" fill="#2e7d6b"/>
-        <path d="M92 40 q14 -12 30 -4 q-6 16 -22 18 q-10 -6 -8 -14z" fill="#a8d5a2"/>
-        <path d="M128 66 q16 2 20 14 q-12 8 -22 -2 q-2 -8 2 -12z" fill="#a8d5a2"/>
-        <path d="M196 30 q26 -14 44 4 q-4 26 -30 28 q-20 -12 -14 -32z" fill="#4c9a4c"/>
-        <path d="M216 34 l0 34 M216 44 l12 -6 M216 52 l-12 -4" stroke="#2f6b2f" stroke-width="3" fill="none"/>
-        <g stroke="#e8a13a" stroke-width="4" stroke-linecap="round">
-          <line x1="252" y1="16" x2="252" y2="26"/><line x1="272" y1="28" x2="266" y2="36"/>
-          <line x1="280" y1="54" x2="270" y2="54"/><line x1="272" y1="80" x2="266" y2="72"/>
-        </g>
-        <circle cx="252" cy="54" r="12" fill="#e8a13a"/>
-      </svg>
-    </div>
-    <div class="kicker">Climate &middot; COP31</div>
-    <h2>Climate summit ends with no deal</h2>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><rect x="7" y="20" width="5" height="8" fill="#2563eb"/><rect x="14.5" y="14" width="5" height="14" fill="#2563eb"/><rect x="22" y="8" width="5" height="20" fill="#b91c1c"/></svg>
+    <div class="kick">ASIA · TAIWAN</div>
+    <h3>TAIEX jumps a record 8.99%</h3>
+    <p>Index up 3,310 points to 40,122; TSMC alone adds about 1,600 points.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9effa"/><path d="M17 4 L22 16 L17 13 L12 16 Z" fill="#37474f"/><circle cx="17" cy="10" r="2.4" fill="#e8eef7"/><path d="M15 16 L17 24 L19 16 Z" fill="#e8a13a"/></svg>
+    <div class="kick">SPACE · CHINA</div>
+    <h3>China's first foreign astronaut</h3>
+    <p>Pakistani Zeeshan Ali joins the Tiangong station on the Shenzhou-24 mission.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><rect x="10" y="11" width="14" height="12" rx="2" fill="#546e7a"/><line x1="17" y1="11" x2="17" y2="6" stroke="#546e7a" stroke-width="2"/><circle cx="17" cy="5" r="2" fill="#b91c1c"/><circle cx="13.5" cy="16.5" r="1.6" fill="#fff"/><circle cx="20.5" cy="16.5" r="1.6" fill="#fff"/></svg>
+    <div class="kick">TECH · USA</div>
+    <h3>States sue Musk over Grok</h3>
+    <p>US states sue his businesses over sexualised images from the Grok chatbot.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdecec"/><circle cx="17" cy="17" r="8" fill="#b91c1c"/><g stroke="#b91c1c" stroke-width="2"><line x1="17" y1="5" x2="17" y2="9"/><line x1="17" y1="25" x2="17" y2="29"/><line x1="5" y1="17" x2="9" y2="17"/><line x1="25" y1="17" x2="29" y2="17"/><line x1="9" y1="9" x2="12" y2="12"/><line x1="22" y1="22" x2="25" y2="25"/></g><circle cx="14" cy="15" r="2" fill="#fff"/><circle cx="20" cy="19" r="1.6" fill="#fff"/></svg>
+    <div class="kick">HEALTH · USA</div>
+    <h3>US loses measles-free status</h3>
+    <p>Elimination status lost after 25+ years; Pennsylvania records a ninth death.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><g transform="rotate(-35 17 17)"><rect x="9" y="13" width="16" height="8" rx="4" fill="#2563eb"/><rect x="17" y="13" width="8" height="8" rx="4" fill="#f5c518"/></g></svg>
+    <div class="kick">BUSINESS · FRANCE</div>
+    <h3>Sanofi to buy Insmed for $41bn</h3>
+    <p>French drugmaker agrees its largest biotech deal in nearly three years.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f4f1ea"/><g stroke="#3f3a33" stroke-width="2" fill="none" stroke-linecap="round"><line x1="17" y1="6" x2="17" y2="27"/><line x1="8" y1="10" x2="26" y2="10"/><line x1="8" y1="10" x2="5" y2="18"/><line x1="8" y1="10" x2="11" y2="18"/><line x1="26" y1="10" x2="23" y2="18"/><line x1="26" y1="10" x2="29" y2="18"/><line x1="12" y1="27" x2="22" y2="27"/></g><path d="M2 18 A4.5 3 0 0 0 14 18 Z" fill="#8a6d3b"/><path d="M20 18 A4.5 3 0 0 0 32 18 Z" fill="#8a6d3b"/></svg>
+    <div class="kick">JUSTICE · THE HAGUE</div>
+    <h3>Myanmar guilty of genocide</h3>
+    <p>The Hague finds Myanmar guilty; 14 countries back the ruling.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><circle cx="14" cy="17" r="10" fill="#2e7d6b"/><path d="M9 13 q5 -4 9 -1 q-2 5 -7 5 q-3 -2 -2 -4z" fill="#a8d5a2"/><path d="M24 10 q7 -4 8 2 q-2 7 -7 6 q-3 -4 -1 -8z" fill="#4c9a4c"/></svg>
+    <div class="kick">CLIMATE · COP31</div>
+    <h3>COP31 ends with no deal</h3>
     <p>COP31 collapses in rows over fossil fuels and climate finance.</p>
   </article>
-
-  <article class="card w2">
-    <div class="art">
-      <svg viewBox="0 0 300 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shield with a star">
-        <rect width="300" height="108" fill="#e9effa"/>
-        <path d="M150 10 L236 34 V62 C236 88 198 102 150 106 C102 102 64 88 64 62 V34 Z" fill="#2563eb"/>
-        <path d="M150 10 L236 34 V62 C236 88 198 102 150 106 Z" fill="#f5c518" opacity="0.92"/>
-        <path d="M150 10 L150 106 C102 102 64 88 64 62 V34 Z" fill="#2563eb"/>
-        <polygon points="150,38 156,52 171,52 159,61 163,76 150,67 137,76 141,61 129,52 144,52" fill="#ffffff"/>
-      </svg>
-    </div>
-    <div class="kicker">War &middot; Ukraine</div>
-    <h2>Ukraine war: strikes and space warning</h2>
-    <p>Zaporizhzhia attack kills 2, wounds 40; NATO vows to defend space as Russia warns Estonia.</p>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><rect x="10" y="11" width="14" height="12" rx="2" fill="#2e7d6b"/><line x1="17" y1="11" x2="17" y2="6" stroke="#2e7d6b" stroke-width="2"/><circle cx="17" cy="5" r="2" fill="#e8a13a"/><circle cx="13.5" cy="16.5" r="1.6" fill="#fff"/><circle cx="20.5" cy="16.5" r="1.6" fill="#fff"/></svg>
+    <div class="kick">WORLD · UN</div>
+    <h3>UN chief urges AI safety talks</h3>
+    <p>Guterres calls for global AI safety rules to be agreed within a year.</p>
   </article>
-
-  <article class="card w3">
-    <div class="art">
-      <svg viewBox="0 0 300 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Damaged buildings with smoke">
-        <rect width="300" height="108" fill="#f5efe6"/>
-        <path d="M40 108 V58 L58 48 L76 58 V44 L96 34 L116 44 V58 L136 48 L150 58 V108 Z" fill="#7a6a58"/>
-        <path d="M170 108 V70 L188 60 L206 70 V54 L226 44 L246 56 V70 L262 62 V108 Z" fill="#9a8a76"/>
-        <path d="M96 34 q-10 -14 2 -24 q4 10 -2 24z M226 44 q10 -14 -2 -24 q-4 10 2 24z" fill="#b8b0a2"/>
-        <rect x="52" y="70" width="12" height="12" fill="#f5efe6"/>
-        <rect x="72" y="88" width="12" height="12" fill="#f5efe6"/>
-        <rect x="182" y="80" width="12" height="12" fill="#f5efe6"/>
-        <rect x="222" y="84" width="12" height="12" fill="#f5efe6"/>
-      </svg>
-    </div>
-    <div class="kicker">War &middot; Gaza</div>
-    <h2>Gaza strikes kill Hamas security chief</h2>
-    <p>Israeli airstrikes kill Naeem Abu Nahel and six others; the UN says the war undid 77 years of development.</p>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdecec"/><polygon points="17,4 19.5,11 27,8 22.5,14.5 29,17 22.5,19.5 27,26 19.5,23 17,30 14.5,23 7,26 11.5,19.5 5,17 11.5,14.5 7,8 14.5,11" fill="#e8a13a"/></svg>
+    <div class="kick">WAR · UKRAINE</div>
+    <h3>Zaporizhzhia strike kills 2</h3>
+    <p>Overnight attack wounds 40, including four children.</p>
   </article>
-
-  <article class="card w3">
-    <div class="art">
-      <svg viewBox="0 0 300 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oil tanker on waves">
-        <rect width="300" height="108" fill="#e8eef7"/>
-        <path d="M52 62 L248 62 L232 88 L72 88 Z" fill="#37474f"/>
-        <rect x="176" y="34" width="42" height="28" fill="#546e7a"/>
-        <rect x="196" y="22" width="8" height="12" fill="#37474f"/>
-        <path d="M96 52 q10 -16 20 0 q10 -16 20 0" fill="none" stroke="#37474f" stroke-width="4" stroke-linecap="round"/>
-        <path d="M30 94 q15 -8 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0" fill="none" stroke="#3f7fb8" stroke-width="4" stroke-linecap="round"/>
-        <path d="M262 26 q8 -12 0 -20 q-8 8 0 20z" fill="#37474f"/>
-      </svg>
-    </div>
-    <div class="kicker">Tensions &middot; Iran</div>
-    <h2>Three tankers hit by mines in Hormuz</h2>
-    <p>Iran sets seven conditions for talks as US leaders meet Qatar&rsquo;s premier at the White House.</p>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8eef7"/><path d="M6 19 L28 19 L25 25 L9 25 Z" fill="#37474f"/><rect x="19" y="12" width="7" height="7" fill="#546e7a"/><path d="M4 28 q3 -2 6 0 t6 0 t6 0 t6 0" fill="none" stroke="#3f7fb8" stroke-width="2"/></svg>
+    <div class="kick">WAR · UKRAINE</div>
+    <h3>Ukraine hits Russian ships</h3>
+    <p>Kyiv says it hit ships in the Gulf of Finland and a warship off Libya.</p>
   </article>
-</section>
-
-<section class="strip">
-  <div class="label">Also Today</div>
-  <ul>
-    <li><b>US loses measles elimination status</b> after 25+ years.</li>
-    <li><b>Sanofi to buy US biotech Insmed</b> for $41 billion.</li>
-    <li><b>Fighting in DR Congo&rsquo;s Ituri province</b> traps Ebola response teams.</li>
-    <li><b>5.6-magnitude earthquake</b> strikes Nepal near the China border.</li>
-  </ul>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9effa"/><path d="M17 4 L27 8 V16 C27 23 22 27 17 29 C12 27 7 23 7 16 V8 Z" fill="#2563eb"/><polygon points="17,11 18.6,15 23,15 19.6,17.6 20.8,21.6 17,19.4 13.2,21.6 14.4,17.6 11,15 15.4,15" fill="#fff"/></svg>
+    <div class="kick">WAR · EUROPE</div>
+    <h3>Russia warns Estonia of war</h3>
+    <p>Medvedev warns of a preventive nuclear attack; NATO vows to defend space.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e9effa"/><path d="M17 4 L27 8 V16 C27 23 22 27 17 29 C12 27 7 23 7 16 V8 Z" fill="#f5c518"/><polygon points="17,11 18.6,15 23,15 19.6,17.6 20.8,21.6 17,19.4 13.2,21.6 14.4,17.6 11,15 15.4,15" fill="#2563eb"/></svg>
+    <div class="kick">EUROPE · GERMANY</div>
+    <h3>Germany gains Delta access</h3>
+    <p>Berlin first to access the system; Zelensky urges four-way peace talks.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdecec"/><circle cx="17" cy="17" r="11" fill="none" stroke="#b91c1c" stroke-width="3"/><line x1="9" y1="9" x2="25" y2="25" stroke="#b91c1c" stroke-width="3"/></svg>
+    <div class="kick">EUROPE · UK</div>
+    <h3>Britain sanctions the Houthis</h3>
+    <p>London blacklists the group and four senior officials.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><ellipse cx="17" cy="19" rx="9" ry="5.5" fill="#546e7a"/><line x1="4" y1="10" x2="30" y2="10" stroke="#37474f" stroke-width="2.4"/><line x1="17" y1="10" x2="17" y2="14" stroke="#37474f" stroke-width="2"/><line x1="25" y1="18" x2="30" y2="15" stroke="#37474f" stroke-width="2"/></svg>
+    <div class="kick">EUROPE · TURKIYE</div>
+    <h3>Five die in Turkiye crash</h3>
+    <p>Air Force helicopter crashes in western Turkiye, killing all five crew.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f5efe6"/><path d="M5 29 V15 L10 12 L15 15 V29 Z" fill="#7a6a58"/><path d="M18 29 V18 L23 15 L28 18 V29 Z" fill="#9a8a76"/><rect x="8" y="19" width="3" height="3" fill="#f5efe6"/><rect x="21" y="21" width="3" height="3" fill="#f5efe6"/></svg>
+    <div class="kick">WAR · GAZA</div>
+    <h3>Hamas security chief killed</h3>
+    <p>Naeem Abu Nahel and six others die; Oxfam calls Gaza a 'toxic wasteland'.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8eef7"/><path d="M6 19 L28 19 L25 25 L9 25 Z" fill="#37474f"/><rect x="9" y="13" width="6" height="6" fill="#546e7a"/><path d="M4 28 q3 -2 6 0 t6 0 t6 0 t6 0" fill="none" stroke="#3f7fb8" stroke-width="2"/><circle cx="27" cy="8" r="2.4" fill="#b91c1c"/></svg>
+    <div class="kick">TENSIONS · HORMUZ</div>
+    <h3>Tankers hit by mines in Hormuz</h3>
+    <p>Iran's Revolutionary Guard says it attacked a container ship in the strait.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><rect x="10" y="5" width="14" height="24" rx="1.5" fill="#fff" stroke="#546e7a" stroke-width="2"/><line x1="13" y1="12" x2="21" y2="12" stroke="#546e7a" stroke-width="2"/><line x1="13" y1="17" x2="21" y2="17" stroke="#546e7a" stroke-width="2"/><line x1="13" y1="22" x2="18" y2="22" stroke="#546e7a" stroke-width="2"/></svg>
+    <div class="kick">TENSIONS · IRAN</div>
+    <h3>Iran sets 7 conditions</h3>
+    <p>No talks until the US meets seven conditions, Tehran says.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdf3e0"/><path d="M17 5 L30 27 L4 27 Z" fill="#e8a13a"/><rect x="16" y="13" width="2.4" height="8" fill="#fff"/><circle cx="17.2" cy="24" r="1.6" fill="#fff"/></svg>
+    <div class="kick">WAR · YEMEN</div>
+    <h3>Houthis advance on Aden</h3>
+    <p>Fighters about 60 km from Aden; drone attack on a Riyadh tower wounds 11.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f4f1ea"/><line x1="10" y1="5" x2="10" y2="29" stroke="#3f3a33" stroke-width="2.4"/><path d="M10 5 L28 10 L10 16 Z" fill="#b91c1c"/></svg>
+    <div class="kick">MIDDLE EAST · LIBYA</div>
+    <h3>Libya's Haftar visits Turkey</h3>
+    <p>Haftar meets President Erdogan on his first visit to Turkey.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><path d="M5 20 L8 13 L22 13 L26 20 L27 20 L27 24 L5 24 Z" fill="#37474f"/><circle cx="11" cy="24" r="3.4" fill="#111"/><circle cx="22" cy="24" r="3.4" fill="#111"/></svg>
+    <div class="kick">MIDDLE EAST · UAE</div>
+    <h3>11 die in UAE coach crash</h3>
+    <p>A coach and a truck collide in Ras el-Khaimah, killing eleven people.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdecec"/><path d="M17 5 L30 27 L4 27 Z" fill="#b91c1c"/><rect x="16" y="13" width="2.4" height="8" fill="#fff"/><circle cx="17.2" cy="24" r="1.6" fill="#fff"/></svg>
+    <div class="kick">AMERICAS · COLOMBIA</div>
+    <h3>25 held hostage in Cartagena</h3>
+    <p>Armed men seize a supermarket; a car bomb in Villavicencio injures 23.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#f4f1ea"/><g transform="rotate(-40 17 14)"><rect x="10" y="9" width="14" height="7" rx="2" fill="#8a6d3b"/><rect x="15" y="16" width="4" height="11" fill="#3f3a33"/></g><line x1="8" y1="28" x2="26" y2="28" stroke="#3f3a33" stroke-width="2.4"/></svg>
+    <div class="kick">AMERICAS · MEXICO</div>
+    <h3>Mexico to try 'El Chapo Isidro'</h3>
+    <p>Mexico tries the alleged drug lord itself despite a US extradition request.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><circle cx="17" cy="17" r="11" fill="#2e7d6b"/><rect x="15" y="10" width="4" height="14" fill="#fff"/><rect x="10" y="15" width="14" height="4" fill="#fff"/></svg>
+    <div class="kick">AMERICAS · CUBA</div>
+    <h3>WHO chief visits ailing Cuba</h3>
+    <p>The WHO director-general visits as Cuba's health system deteriorates.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><rect x="7" y="20" width="5" height="8" fill="#2e7d6b"/><rect x="14.5" y="14" width="5" height="14" fill="#2e7d6b"/><rect x="22" y="8" width="5" height="20" fill="#2e7d6b"/></svg>
+    <div class="kick">AMERICAS · BRAZIL</div>
+    <h3>Lula caps spending growth</h3>
+    <p>President signs a fiscal law capping real spending growth at 2%.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#fdf3e0"/><path d="M11 6 L23 6 L22 15 Q22 20 17 20 Q12 20 12 15 Z" fill="#e8a13a"/><path d="M11 8 L7 8 Q7 13 11 13 M23 8 L27 8 Q27 13 23 13" fill="none" stroke="#e8a13a" stroke-width="2"/><rect x="15.5" y="20" width="3" height="4" fill="#8a6d3b"/><rect x="12" y="24" width="10" height="2.6" fill="#8a6d3b"/></svg>
+    <div class="kick">SPORT · AFRICA</div>
+    <h3>Senegal's AFCON title restored</h3>
+    <p>CAS overturns the decision to strip Senegal of the championship.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><circle cx="17" cy="17" r="8" fill="#2e7d6b"/><g stroke="#2e7d6b" stroke-width="2"><line x1="17" y1="5" x2="17" y2="9"/><line x1="17" y1="25" x2="17" y2="29"/><line x1="5" y1="17" x2="9" y2="17"/><line x1="25" y1="17" x2="29" y2="17"/><line x1="9" y1="9" x2="12" y2="12"/><line x1="22" y1="22" x2="25" y2="25"/></g><circle cx="14" cy="15" r="2" fill="#fff"/><circle cx="20" cy="19" r="1.6" fill="#fff"/></svg>
+    <div class="kick">HEALTH · CONGO</div>
+    <h3>Ebola teams trapped in Congo</h3>
+    <p>Clashes in Ituri province force response teams to take cover, the WHO says.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#eef2f7"/><path d="M4 28 L13 10 L20 22 L24 14 L30 28 Z" fill="#546e7a"/><path d="M13 10 L15 15 L13 17 L16 20" fill="none" stroke="#fff" stroke-width="1.6"/></svg>
+    <div class="kick">ASIA · NEPAL</div>
+    <h3>5.6 quake strikes Nepal</h3>
+    <p>Magnitude 5.6 tremor hits near the border with China.</p>
+  </article>
+  <article class="cell"><svg class="ic" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" fill="#e8f3f3"/><circle cx="12" cy="11" r="4" fill="#2e7d6b"/><circle cx="22" cy="11" r="4" fill="#2e7d6b"/><path d="M4 28 Q5 19 12 19 Q19 19 20 28 Z" fill="#2e7d6b"/><path d="M16 28 Q17 20 22 20 Q27 20 28 28 Z" fill="#4c9a4c"/></svg>
+    <div class="kick">WORLD · UN</div>
+    <h3>47,000 women killed in 2025</h3>
+    <p>UN says 47,000 women were killed by partners or relatives worldwide in 2025.</p>
+  </article>
 </section>
 
 </body>
